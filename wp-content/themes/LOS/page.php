@@ -5,13 +5,13 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="mdcont twocol">
     <main class="page-content">
         <h1 class="page-title"><?= the_title() ?></h1>
-        <?= the_content() ?>
+        <div class="simple-content"><?= the_content() ?></div>
         <?php
         if( have_rows('pb_rows') ):
             $numrows = count( get_field('pb_rows'));
             $i = 1;
             while ( have_rows('pb_rows') ) : the_row(); ?>
-            <div <?php print ($i < $numrows) ? "class='module m4 " . get_row_layout() . "'" : "class='" . get_row_layout() . "'";?> id="row-id-<?= get_the_ID()?>-<?= $i ?>"> <?php
+            <div class='<?php print ($i < $numrows) ? "module m4 " . get_row_layout() . "'" : get_row_layout();?><?php print ($i == $numrows) ? " lastmodule" : "" ?>' id="row-id-<?= get_the_ID()?>-<?= $i ?>"> <?php
                 if( get_row_layout() == 'pb_simple_text' ):
                     get_template_part("modules/builder/simple-text");
                 elseif( get_row_layout() == 'pb_simple_img' ):

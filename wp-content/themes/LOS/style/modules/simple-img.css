@@ -1,3 +1,7 @@
+.pb_simple_img {
+    margin-top: 4rem;
+}
+
 .simple-img {
     max-width: 100%;
     filter: var(--dropshadow);
@@ -6,5 +10,9 @@
 
 .img-desc {
     font-style: italic;
+    color: var(--grey);
+}
+
+.img-desc a {
     color: var(--grey);
 }

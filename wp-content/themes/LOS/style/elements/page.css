@@ -15,6 +15,14 @@
     padding-bottom: 0.5rem;
 }
 
+.simple-content {
+    margin-bottom: 3rem;
+}
+
+.lastmodule {
+    margin-bottom: 4rem;
+}
+
 div.mdcont.twocol {
     display: flex;
     justify-content: space-between;
@@ -52,7 +60,6 @@ aside.aside-content {
 
     #cta-mob {
         display: flex;
-        margin-top: 4rem;
         margin-bottom: 4rem;
     }
     

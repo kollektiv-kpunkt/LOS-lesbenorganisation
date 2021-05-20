@@ -1,3 +1,7 @@
+.pb_toggle:not(.lastmodule) {
+    margin-bottom: 2rem;
+}
+
 details {
     width: 100%;
     padding: 1.5rem 1.5rem;
@@ -32,6 +36,10 @@ summary .safari-fix {
     justify-content: space-between;
 }
 
+.safari-fix span {
+    width: 90%;
+}
+
 summary:focus {
     outline: none;
 }
@@ -41,6 +49,7 @@ summary:focus {
     transition: .3s ease;
     font-size: 2rem;
     line-height: 1;
+    margin: auto 0;
 }
 
 .control-icon-close {
@@ -50,6 +59,7 @@ summary:focus {
 details[open] .control-icon-close {
     display: initial;
     transition: .3s ease;
+    margin: 0;
 }
 
 details[open] .control-icon-expand {
