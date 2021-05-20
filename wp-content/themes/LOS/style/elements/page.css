@@ -47,6 +47,10 @@ aside.aside-content {
 }
 
 @media only screen and (max-width:940px) {
+    .simple-content {
+        font-size: 1rem;
+    }
+    
     aside.nl-cta {
         display: none;
     }
