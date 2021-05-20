@@ -22,13 +22,45 @@
             "button_label": "Add tile",
             "sub_fields": [
                 {
+                    "key": "field_60a61141d96d5",
+                    "label": "Type",
+                    "name": "nt_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "1": "Internal",
+                        "2": "External"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": 1,
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
                     "key": "field_609f99d242a36",
                     "label": "Page",
                     "name": "nt_site",
                     "type": "post_object",
                     "instructions": "",
                     "required": 1,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60a61141d96d5",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -42,6 +74,30 @@
                     "multiple": 0,
                     "return_format": "id",
                     "ui": 1
+                },
+                {
+                    "key": "field_60a6116dd96d6",
+                    "label": "URL",
+                    "name": "nt_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60a61141d96d5",
+                                "operator": "==",
+                                "value": "2"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 },
                 {
                     "key": "field_609f99ec42a37",
@@ -109,5 +165,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1621356678
+    "modified": 1621496195
 }

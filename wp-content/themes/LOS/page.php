@@ -38,6 +38,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     get_template_part("modules/builder/activist-form");
                 elseif( get_row_layout() == 'pb_blog_grid' ):
                     get_template_part("modules/builder/blog-grid");
+                elseif( get_row_layout() == 'pb_infobox' ):
+                    get_template_part("modules/builder/infobox");
                 endif; ?>
             </div> 
             <?php

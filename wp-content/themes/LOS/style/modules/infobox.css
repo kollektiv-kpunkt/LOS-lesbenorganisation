@@ -1,0 +1,17 @@
+.infobox {
+    padding: 2rem;
+    background-color: white;
+    filter: var(--dropshadow) ;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.infobox h3 {
+    margin-top: 0;
+    color: var(--red);
+}
+
+.infobox .button {
+    width: 100%;
+    box-sizing: border-box;
+}
