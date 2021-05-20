@@ -13,7 +13,7 @@ get_header();
             $postid = get_sub_field("fp_hero_post");
                 ?>
                 <div class="heroine-slide <?php print ($i == 1) ? "active" : ""; ?>" slide-id="<?=$i?>">
-                    <div class="slide-img" style="background-image: url('<?=get_the_post_thumbnail_url($postid) ?>');">
+                    <div class="slide-img" style="background-image: url('<?=get_the_post_thumbnail_url($postid, "large") ?>');">
                     </div>
                     <div class="slide-cont">
                         <h5><?= get_field('post_subtitle', $postid) ?></h5>

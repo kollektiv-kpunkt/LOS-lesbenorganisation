@@ -163,7 +163,7 @@ add_action( 'customize_register', 'los_customize_register' );
 
 /* SCRIPTS AND STYLES */
 function add_theme_scripts() {
-    wp_enqueue_style( 'remixicon', "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" );
+    wp_enqueue_style( 'remixicon', get_template_directory_uri() . '/vendor/remixicon/remixicon.css' );
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
     wp_enqueue_script( 'style', get_template_directory_uri() . '/js/style.js', array ( 'jquery' ), 1.1, false);
