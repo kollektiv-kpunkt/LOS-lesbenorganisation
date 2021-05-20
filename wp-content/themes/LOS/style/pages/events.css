@@ -1,0 +1,246 @@
+.featured-event {
+    background-blend-mode: overlay;
+    border-radius: 3px;
+    filter: var(--dropshadow);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.datebox {
+    width: 225px;
+    max-width: 25%;
+    background-color: rgba(190, 22, 34, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.datebox-cont {
+    padding: 1rem;
+}
+
+.datebox-cont span {
+    font-weight: 700;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.datebox-cont span#month {
+    font-size: 3rem;
+}
+
+.datebox-cont span#day {
+    font-size: 6rem;
+}
+
+.fe-content {
+    width: calc(var(--colwid) - 2rem);
+    min-width: 325px;
+    margin-right: 0;
+    margin-left: auto;
+    background-color: var(--white);
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.fe-date {
+    margin: 0;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.fe-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.fe-excerpt {
+    margin-bottom: 1.5rem;
+}
+
+#fe-cont-mob {
+    display: none;
+}
+
+@media only screen and (max-width: 840px) {
+    #fe-cont-desk {
+        display: none;
+    }
+
+    #fe-cont-mob {
+        display: block;
+        width: var(--mobile-colwid);
+        max-width: 100%;
+        margin: auto;
+        background-color: var(--white);
+        border-radius: 3px;
+        overflow: hidden;
+        filter: var(--dropshadow)
+    }
+
+    #fe-cont-mob .mob-cont-inner {
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .featured-event {
+        border-radius: 0;
+        filter: none;
+    }
+}
+
+
+/* EVENT GRID */
+
+#eventgrid {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.25rem;
+}
+
+.event-column-cont {
+    width: var(--colwid);
+}
+
+.event-column-cont .crumb {
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.event-card {
+    border-radius: 3px;
+    filter: var(--dropshadow);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 3rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.event-card.islos {
+    border: 2px solid var(--red);
+}
+.event-card.notlos {
+    border: 2px solid var(--orange);
+}
+
+.ecard-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+}
+
+.ecard-overlay.islos {
+    background-color: var(--red);
+}
+
+.ecard-overlay.notlos {
+    background-color: var(--orange);
+}
+
+.event-date-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.event-date-inner span {
+    font-weight: 700;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.event-date-inner span#month {
+    font-size: 4.25rem;
+}
+
+.event-date-inner span#day {
+    font-size: 8.5rem;
+}
+
+.event-excerpt-cont {
+    padding-top: 1.5rem;
+    display: none;
+}
+
+.event-column-cont.active .event-excerpt-cont {
+    display: block;
+}
+
+.event-excerpt-cont h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.event-column-cont.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 840px) {
+    #eventgrid {
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .event-column-cont {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .event-column-cont {
+        width: 100%;
+        max-width: var(--mobile-colwid);
+        margin: auto;
+    }
+}
+
+
+
+
+
+/* MONTH FIXES */
+
+.datebox-cont span#month[month-length="6"], .datebox-cont span#month[month-length="7"] {
+    font-size: 2rem;
+}
+
+.datebox-cont span#month[month-length="8"], .datebox-cont span#month[month-length="9"], .datebox-cont span#month[month-length="10"], .datebox-cont span#month[month-length="11"] {
+    font-size: 1.5rem;
+}
+
+.event-date-inner span#month[month-length="6"], .event-date-inner span#month[month-length="7"] {
+    font-size: 3rem;
+}
+
+.event-date-inner span#month[month-length="8"], .event-date-inner span#month[month-length="9"], .event-date-inner span#month[month-length="10"], .event-date-inner span#month[month-length="11"] {
+    font-size: 2rem;
+}

@@ -1,0 +1,46 @@
+{
+    "key": "group_60a0cd17dab5c",
+    "title": "~Post Link",
+    "fields": [
+        {
+            "key": "field_60a0cd1f1c735",
+            "label": "Post Link",
+            "name": "module_post_link",
+            "type": "post_object",
+            "instructions": "Please select the single post object you want to display here.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1621356678
+}

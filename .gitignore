@@ -17,3 +17,9 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+wp-content/themes/LOS/img/logo.svg
+wp-content/themes/LOS/img/footer-logo.svg
+wp-content/themes/LOS/img/favicon.svg
+wp-content/themes/LOS/img/favicon.png
+
+wp-content/themes/LOS/config/config.php

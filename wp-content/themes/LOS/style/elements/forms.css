@@ -1,0 +1,227 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+form, .form-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+input, select {
+    padding: 0.5rem;
+    display: block;
+    width: calc(50% - 0.375rem);
+    margin-bottom: 0.75rem;
+    box-sizing: border-box;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 3px;
+}
+
+input.fullwidth, select.fullwidth {
+    width: 100%;
+}
+
+button[type="submit"] {
+    width: 100%;
+}
+
+
+.input-group {
+    display: flex;
+    margin-bottom: 0.25rem;
+}
+
+.input-group * {
+    margin: auto 0;
+}
+
+input[type=radio], input[type=checkbox] { 
+	display:none;
+    width: auto;
+} 
+
+input[type=radio] + label, input[type=checkbox] + label {
+    display: block;
+    padding-left: 1.5em;
+    text-indent: -.7em;
+}
+
+input[type=radio] + label:before, input[type=checkbox] + label:before {
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f096";
+	letter-spacing: 10px;
+	cursor: pointer;
+}
+
+input[type=radio]:checked + label:before, input[type=checkbox]:checked + label:before { 
+	content: "\f046";
+    color: var(--red);
+} 
+
+input[type=radio]:checked + label:before, input[type=checkbox]:checked + label:before { 
+	letter-spacing: 7.5px;
+}
+
+.form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+hr.form-hr {
+    border: none;
+    border-bottom: 1px dotted var(--grey);
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+hr.form-hr.inv {
+    border-color: transparent;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.form-helper {
+    font-style: italic;
+    color: var(--grey);
+    width: 100%;
+    margin-top: -0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.nl-form input {
+    width: 100%;
+}
+.nl-form button[type="submit"] {
+    width: 100%;
+}
+
+footer input {
+    border: none;
+}
+
+
+input::-webkit-input-placeholder{color:var(--grey)}input::-ms-input-placeholder{color:var(--grey)}input:-ms-input-placeholder{color:var(--grey)}input::-moz-placeholder{opacity:1;color:var(--grey)}input:-moz-placeholder{opacity:1;color:var(--grey)}input::placeholder{color:var(--grey)}
+
+@media only screen and (max-width: 620px) {
+    input {
+        width: 100% !important;
+    }
+}
+
+
+/* ALERT */
+
+.form-alert {
+    padding: 0.75rem;
+    background-color: var(--alertbg);
+    color: var(--alertcolor);
+    border: 2px solid var(--alertcolor);
+    border-radius: 3px;
+    line-height: 1.25;
+    display: none;
+    margin-bottom: 0.5rem;
+}
+
+.form-alert.show {
+    display: block;
+}
+
+.form-alert.error {
+    --alertbg: #f8d7da;
+    --alertcolor: var(--red);
+}
+
+.form-alert.success {
+    --alertbg: #d4edda;
+    --alertcolor: #155724;
+}
+
+.form-alert.warning {
+    --alertbg: #fff3cd;
+    --alertcolor: var(--orange);
+}
+
+
+/* AJAX LOADER */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+    display: none;
+}
+.lds-ellipsis.show {
+    display: block;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--red);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+footer .lds-ellipsis div {
+    background: var(--white);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 4px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 4px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 16px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 28px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+  }
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(12px, 0);
+    }
+}
+  

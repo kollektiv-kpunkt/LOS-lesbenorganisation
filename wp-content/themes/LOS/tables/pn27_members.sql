@@ -1,0 +1,23 @@
+CREATE TABLE `pn27_members` (
+  `member_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `mamber_timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+  `member_UUID` varchar(100) NOT NULL,
+  `member_type` varchar(50) NOT NULL,
+  `member_anrede` int(11) NOT NULL,
+  `member_orga` varchar(255) NOT NULL,
+  `member_fname` varchar(100) NOT NULL,
+  `member_lname` varchar(100) NOT NULL,
+  `member_email` varchar(100) NOT NULL,
+  `member_fname2` varchar(100) NOT NULL,
+  `member_lname2` varchar(100) NOT NULL,
+  `member_email2` varchar(100) NOT NULL,
+  `member_street` varchar(255) NOT NULL,
+  `member_plz` varchar(10) NOT NULL,
+  `member_amount` varchar(100) NOT NULL,
+  `member_lang` varchar(4) NOT NULL,
+  `member_phone` varchar(100) NOT NULL,
+  `member_year` int(11) NOT NULL,
+  `member_notes` varchar(255) NOT NULL,
+  PRIMARY KEY `member_ID` (`member_ID`),
+  UNIQUE KEY `member_UUID` (`member_UUID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

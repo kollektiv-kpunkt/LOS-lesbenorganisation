@@ -1,0 +1,64 @@
+{
+    "key": "group_60a149dba5af5",
+    "title": "Event Content",
+    "fields": [
+        {
+            "key": "field_60a149f5786ea",
+            "label": "Excerpt",
+            "name": "event_excerpt",
+            "type": "textarea",
+            "instructions": "Please write a very short description of this event",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 300,
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_60a14a42786eb",
+            "label": "",
+            "name": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_60a11d9be716b"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621356678
+}

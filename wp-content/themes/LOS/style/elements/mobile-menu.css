@@ -1,0 +1,126 @@
+@media only screen and (min-width: 941px) {
+    #mobile-menu-cont {
+        display: none;
+    }
+}
+
+#mobile-menu-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    height: calc(100 * var(--vh));
+    width: 90%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-y: scroll;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s opacity, 0.5s visibility;
+}
+
+#mobile-menu-cont.show {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s opacity;
+}
+
+#mobile-main-menu ul {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#mobile-main-menu li {
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 8px solid var(--grey);
+    width: fit-content;
+}
+
+#mobile-main-menu li.current-menu-item {
+    border-color: var(--red);
+}
+
+#mobile-main-menu li a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+#close-box {
+    display: flex;
+    position: absolute;
+    top: var(--mcpad);
+    color: var(--red);
+}
+
+#close-box * {
+    margin: auto 0;
+}
+
+#close-box i {
+    font-size: 2rem;
+}
+
+#close-box #close-text {
+    margin-left: 0.5rem;
+}
+
+#lang-box {
+    position: absolute;
+    bottom: var(--mcpad);
+}
+
+#lang-box, #lang-box a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+#lang-box .current {
+    color: var(--black);
+}
+
+#easter-egg {
+    display: flex;
+    width: 100vh;
+    position: absolute;
+    bottom: var(--mcpad);
+    right: var(--mcpad);
+    transform: rotate(-90deg) translateX(100%);
+    transform-origin: bottom right;
+}
+
+#easter-egg small{
+    margin-right: 1rem;
+    font-weight: 400;
+}
+
+#easter-egg small a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 490px) {
+    #mobile-main-menu li {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    #mobile-main-menu li {
+        font-size: 2.5rem;
+        border-width: 6px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #mobile-main-menu li {
+        font-size: 2rem;
+    }
+}

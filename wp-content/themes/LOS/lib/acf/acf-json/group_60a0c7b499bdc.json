@@ -1,0 +1,590 @@
+{
+    "key": "group_60a0c7b499bdc",
+    "title": "Page Builder",
+    "fields": [
+        {
+            "key": "field_60a0c7fb52355",
+            "label": "Page Contents",
+            "name": "pb_rows",
+            "type": "flexible_content",
+            "instructions": "Please select modules you want to add to your page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_60a0c80feb73a": {
+                    "key": "layout_60a0c80feb73a",
+                    "name": "pb_simple_text",
+                    "label": "Simple text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0c8a344fd2",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a0c86808b6a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a0c8bf44fd3": {
+                    "key": "layout_60a0c8bf44fd3",
+                    "name": "pb_simple_img",
+                    "label": "Simple Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0c93744fd4",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a0c8d0d45cf"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a0ca28b4c9f": {
+                    "key": "layout_60a0ca28b4c9f",
+                    "name": "pb_text_img",
+                    "label": "Text and image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0ca39b4ca0",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a0ca3c3fcaa"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a0cba5c2293": {
+                    "key": "layout_60a0cba5c2293",
+                    "name": "pb_blockquote",
+                    "label": "Blockquote",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0cbb2c2294",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a0cb10ec7bd"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a0cc9c7270c": {
+                    "key": "layout_60a0cc9c7270c",
+                    "name": "pb_yt_video",
+                    "label": "YouTube Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0ccb07270d",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a0cbdaf1958"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a0cd79f2a79": {
+                    "key": "layout_60a0cd79f2a79",
+                    "name": "pb_post_link",
+                    "label": "Post Link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0cd87f2a7a",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a0cd17dab5c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a10a80c6e9d": {
+                    "key": "layout_60a10a80c6e9d",
+                    "name": "pb_button",
+                    "label": "Button",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a10a88c6e9e",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a02775274c6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a10a98c6e9f": {
+                    "key": "layout_60a10a98c6e9f",
+                    "name": "pb_navtiles",
+                    "label": "Navigation Tiles",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a10aa5c6ea0",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_609f999e9b4f2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a10ad0c6ea1": {
+                    "key": "layout_60a10ad0c6ea1",
+                    "name": "pb_toggle",
+                    "label": "Toggle",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a1131a50724",
+                            "label": "Summary",
+                            "name": "module_toggle_summary",
+                            "type": "text",
+                            "instructions": "What should be displayed when the toggle is closed?",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_60a1133a50725",
+                            "label": "Initial status",
+                            "name": "toggle_status",
+                            "type": "radio",
+                            "instructions": "Is the toggle open or closed initially?",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "1": "closed",
+                                "2": "open"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": 1,
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_60a10b9136356",
+                            "label": "Toggle Layout",
+                            "name": "module_toggle_layouts",
+                            "type": "flexible_content",
+                            "instructions": "Select the contents you want in your toggle",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layouts": {
+                                "layout_60a10bfb6f7ae": {
+                                    "key": "layout_60a10bfb6f7ae",
+                                    "name": "toggle_text",
+                                    "label": "Simple Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_60a10adcc6ea2",
+                                            "label": "",
+                                            "name": "",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_60a0c86808b6a"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_60a10bea6f7ad": {
+                                    "key": "layout_60a10bea6f7ad",
+                                    "name": "toggle_video",
+                                    "label": "Video",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_60a10af4c6ea3",
+                                            "label": "",
+                                            "name": "",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_60a0cbdaf1958"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "layout_60a10ba74a6cb": {
+                                    "key": "layout_60a10ba74a6cb",
+                                    "name": "toggle_button",
+                                    "label": "Button",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_60a10b0fc6ea4",
+                                            "label": "",
+                                            "name": "",
+                                            "type": "clone",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "clone": [
+                                                "group_60a02775274c6"
+                                            ],
+                                            "display": "seamless",
+                                            "layout": "block",
+                                            "prefix_label": 0,
+                                            "prefix_name": 0
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "button_label": "Add Row",
+                            "min": "",
+                            "max": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a27860e1ddf": {
+                    "key": "layout_60a27860e1ddf",
+                    "name": "pb_person_grid",
+                    "label": "Person Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a2788ee1de0",
+                            "label": "",
+                            "name": "module_people",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_60a278b8e1de1",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_60a278b8e1de1",
+                                    "label": "Person",
+                                    "name": "module_person",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "person"
+                                    ],
+                                    "taxonomy": "",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a2794ac3f87": {
+                    "key": "layout_60a2794ac3f87",
+                    "name": "pb_member_form",
+                    "label": "Member Form",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a2e4561f8fb": {
+                    "key": "layout_60a2e4561f8fb",
+                    "name": "pb_activist_form",
+                    "label": "Activist Form",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a2f9ceed9f5": {
+                    "key": "layout_60a2f9ceed9f5",
+                    "name": "pb_blog_grid",
+                    "label": "Blog Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a2f9e0ed9f6",
+                            "label": "Category",
+                            "name": "module_blog_category",
+                            "type": "taxonomy",
+                            "instructions": "Please select Categories to be displayed",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "75",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "multi_select",
+                            "allow_null": 1,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "id",
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Module",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "templates\/events.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "templates\/donate.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "templates\/nav-page.php"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1621356679
+}

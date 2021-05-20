@@ -1,0 +1,32 @@
+.blockquote-cont {
+    text-align: center;
+    position: relative;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    line-height: 1.25;
+}
+
+.author {
+    font-weight: 600;
+    color: var(--red);
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.position {
+    color: var(--grey);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 540px) {
+    .quote {
+        width: 100%;
+    }
+}

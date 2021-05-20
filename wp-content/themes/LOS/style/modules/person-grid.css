@@ -1,0 +1,47 @@
+.person-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(3 * var(--colwid) + 4rem);
+}
+
+.person-column {
+    width: var(--scolwid);
+}
+
+.person-img {
+    width: 100%;
+    border-radius: 3px;
+    filter: var(--dropshadow);
+}
+
+h3.person-name {
+    color: var(--red);
+    margin-bottom: 0.5rem;
+}
+
+p.person-position {
+    font-weight: 400;
+    color: var(--grey);
+}
+
+@media only screen and (max-width: 940px) {
+    .person-grid {
+        row-gap: 2rem;
+        column-gap: 2rem;
+        width: 100%;
+    }
+    
+    .person-column {
+        width: calc(50% - 1rem);
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .person-column {
+        width: 100%;
+        max-width: var(--mobile-colwid);
+        margin: auto;
+    }
+}

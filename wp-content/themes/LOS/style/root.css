@@ -1,0 +1,19 @@
+:root {
+    --red: #BE1622;
+    --orange: #E94E1B;
+    --fuchsia: #D60B52;
+    --black: #232323;
+    --white: #f5f5f5;
+    --grey: #9d9d9d;
+    --dropshadow: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.15));
+    --mobile-colwid: 12cm;
+}
+
+html {
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+#main-content {
+    min-height: 50vh;
+}

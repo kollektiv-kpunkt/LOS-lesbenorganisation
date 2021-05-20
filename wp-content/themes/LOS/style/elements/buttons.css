@@ -1,0 +1,53 @@
+.button, button {
+    background-color: var(--btnbgcolor);
+    color: var(--btncolor);
+    border: 2px solid var(--btnbordercolor);
+    --btnbgcolor: var(--red);
+    --btncolor: var(--white);
+    --btnbordercolor: var(--red);
+    padding: 1em 2.5em;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.mg {
+    margin-top: 1rem
+}
+.button.mg-2 {
+    margin-top: 2rem
+}
+
+.button.end {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.button.fullwidth {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* READMORE BUTTON */
+
+.readmore {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.readmore.red {
+    color: var(--red);
+}
+
+.readmore * {
+    margin: auto 0;
+}
+
+.readmore i {
+    font-size: 1.5em;
+}

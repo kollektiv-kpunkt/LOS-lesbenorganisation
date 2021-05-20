@@ -1,0 +1,27 @@
+.blog-grid-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.blog-card.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 680px) {
+    .blog-grid-cont {
+        row-gap: 2rem;
+    }
+
+    .blog-card {
+        width: 100%;
+        max-width: var(--mobile-colwid);
+        margin-left: 0;
+    }
+
+    .card-excerpt {
+        display: none;
+    }
+}

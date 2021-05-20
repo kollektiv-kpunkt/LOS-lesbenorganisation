@@ -1,0 +1,113 @@
+{
+    "key": "group_609f999e9b4f2",
+    "title": "Navigation tiles",
+    "fields": [
+        {
+            "key": "field_609f99a542a35",
+            "label": "Navigation Tiles Grid",
+            "name": "nt_grid",
+            "type": "repeater",
+            "instructions": "Select pages, set a title and an image to create navigation tiles.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_609f9a0242a38",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add tile",
+            "sub_fields": [
+                {
+                    "key": "field_609f99d242a36",
+                    "label": "Page",
+                    "name": "nt_site",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_609f99ec42a37",
+                    "label": "Image",
+                    "name": "nt_img",
+                    "type": "image_aspect_ratio_crop",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "crop_type": "aspect_ratio",
+                    "aspect_ratio_width": 1,
+                    "aspect_ratio_height": 1,
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_609f9a0242a38",
+                    "label": "Title",
+                    "name": "nt_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/nav-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621356678
+}

@@ -1,0 +1,51 @@
+.navtiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    width: calc(3 * var(--colwid) + 4rem);
+}
+
+.navtile {
+    position: relative;
+    width: var(--colwid);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color, normal;
+    border-radius: 3px;
+    filter: var(--dropshadow);
+    overflow: hidden;
+    margin: auto;
+}
+
+.navtile-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 1rem;
+    width: calc(100% - 2rem);
+    color: var(--white);
+    background-color: var(--red);
+    text-align: center;
+}
+
+@media only screen and (max-width: 940px) {
+    .navtiles {
+        row-gap: 2rem;
+        column-gap: 2rem;
+        width: 100%;
+    }
+    
+    .navtile {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    
+    .navtile {
+        width: 100%;
+        max-width: var(--mobile-colwid);
+    }
+}

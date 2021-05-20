@@ -1,0 +1,48 @@
+{
+    "key": "group_60a145fe88e0c",
+    "title": "Author",
+    "fields": [
+        {
+            "key": "field_60a14605490d0",
+            "label": "<a href=\"\/wp-admin\/post-new.php?post_type=person\" target=\"_blank\" rel=\"noopener\">Add new person<\/a>",
+            "name": "post_author",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "person"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1621356678
+}

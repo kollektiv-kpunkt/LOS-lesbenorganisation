@@ -1,0 +1,52 @@
+{
+    "key": "group_60a02ef62cdd5",
+    "title": "Donate Box?",
+    "fields": [
+        {
+            "key": "field_60a02efe36273",
+            "label": "Donate Box Active?",
+            "name": "donate_box_status",
+            "type": "checkbox",
+            "instructions": "Do you want a Donation CtA on the Bottom of this page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Yes"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "templates\/donate.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621356678
+}

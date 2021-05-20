@@ -1,0 +1,212 @@
+{
+    "key": "group_60a027431785a",
+    "title": "CtA Content",
+    "fields": [
+        {
+            "key": "field_60a0284f194ea",
+            "label": "Deactivate?",
+            "name": "cta_status",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Yes"
+            },
+            "allow_custom": 0,
+            "default_value": [
+                "Yes"
+            ],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_60a2960132190",
+            "label": "CtA Type",
+            "name": "cta_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60a0284f194ea",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Layout",
+                "2": "Newsletter Form"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": 2,
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60a0276d194e9",
+            "label": "CtA Title",
+            "name": "cta_title",
+            "type": "text",
+            "instructions": "Please write a title for your call to action",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60a0284f194ea",
+                        "operator": "==empty"
+                    },
+                    {
+                        "field": "field_60a2960132190",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60a0287b194eb",
+            "label": "CtA Layout",
+            "name": "cta_layout",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60a0284f194ea",
+                        "operator": "==empty"
+                    },
+                    {
+                        "field": "field_60a2960132190",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_60a02892eed69": {
+                    "key": "layout_60a02892eed69",
+                    "name": "cta_text_layout",
+                    "label": "Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a028aa194ec",
+                            "label": "",
+                            "name": "cta_text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_60a028f5194ee": {
+                    "key": "layout_60a028f5194ee",
+                    "name": "cta_button_layout",
+                    "label": "Button",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60a0290e194ef",
+                            "label": "",
+                            "name": "cta_button",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60a02775274c6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Element",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "templates\/events.php"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "templates\/blog.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1621356678
+}

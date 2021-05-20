@@ -1,0 +1,29 @@
+.mdcont {
+    padding-left: var(--mcpad);
+    padding-right: var(--mcpad);
+}
+
+.module {
+    margin-bottom: var(--modulemargin);
+    --modulemargin: 7rem;
+}
+
+.module.m5 {
+    --modulemargin: 5rem;
+}
+
+.module.m4 {
+    --modulemargin: 4rem;
+}
+
+.module.m3 {
+    --modulemargin: 3rem;
+}
+
+.module.m2 {
+    --modulemargin: 2rem;
+}
+
+.module.mt {
+    margin-top: var(--modulemargin);
+}
