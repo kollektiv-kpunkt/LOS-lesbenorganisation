@@ -12,7 +12,10 @@
 html {
     background-color: var(--white);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+html.noscroll{overflow-y: hidden;}
 
 #main-content {
     min-height: 50vh;

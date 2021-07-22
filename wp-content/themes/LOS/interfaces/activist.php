@@ -117,11 +117,13 @@ try {
 
     //Recipients
     $mail->setFrom('webmaster@los.ch', $config["email-from"]);
-    $mail->addAddress($i18n["activist-to-email"]);
+    foreach ($config["email-to"] as $emailto) {
+        $mail->addAddress($emailto);
+    }
 
     //Content
     $mail->isHTML(true);
-    $mail->Subject = "Neue:r Aktivist:in: {$fname} {$lname}";
+    $mail->Subject = "Neue*r Aktivist*in: {$fname} {$lname}";
     $mail->Body    = $message;
 
     $mail->send();

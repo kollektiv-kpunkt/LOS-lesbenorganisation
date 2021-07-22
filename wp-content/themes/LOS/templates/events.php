@@ -8,7 +8,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 $feaevent = get_field("ep_featured");
 $fe_crumb = get_field("event_crumb", $feaevent);
 $fe_img = get_the_post_thumbnail_url($feaevent, "large");
-$fe_date = get_field("event_date", $feaevent);
+$fe_date = date("d.m.Y", strtotime(get_field("event_date", $feaevent)));
 $fe_day = explode(".", $fe_date)[0];
 $fe_month = getMonth(explode(".", $fe_date)[1], $i18n["_CODE"]);
 $fe_month_length = strlen($fe_month);
@@ -48,10 +48,19 @@ $fe_link = get_the_permalink($feaevent);
 
 <?php
 // WP_Query arguments
+$date_now = date('Y-m-d H:i:s');
 $args = array(
     'post_type'         => array( 'event' ),
     'nopaging'          => true,
     'posts_per_page'	=> -1,
+    'meta_query' => array(
+        array(
+            'key'           => 'event_date',
+            'compare'       => '>=',
+            'value'         => $date_now,
+            'type'          => 'DATETIME',
+        )
+    ),
     'meta_key'			=> 'event_date',
     'orderby'			=> 'meta_value',
     'order'				=> 'ASC'
@@ -60,7 +69,6 @@ $args = array(
 // The Query
 $query = new WP_Query( $args );
 $numevents = $query->found_posts;
-
 // The Loop
 if ( $query->have_posts() ) { ?>
     <div class="mdcont" id="eventgrid">
@@ -71,7 +79,7 @@ if ( $query->have_posts() ) { ?>
             $e_ID = $post->ID;
             $e_crumb = get_field("event_crumb", $e_ID);
             $e_img = get_the_post_thumbnail_url($e_ID, "medium");
-            $e_date = get_field("event_date", $e_ID);
+            $e_date = date("d.m.Y", strtotime(get_field("event_date", $e_ID)));
             $e_day = explode(".", $e_date)[0];
             $e_month = getMonth(explode(".", $e_date)[1], $i18n["_CODE"]);
             $e_month_length = strlen($e_month);

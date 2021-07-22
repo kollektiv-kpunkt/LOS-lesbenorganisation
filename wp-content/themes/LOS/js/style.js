@@ -25,5 +25,6 @@ var styleSets = function styleSets() {
     })
 }
 
+window.addEventListener("DOMContentLoaded", styleSets, false);
 window.addEventListener("load", styleSets, false);
 window.addEventListener("resize", styleSets, false);

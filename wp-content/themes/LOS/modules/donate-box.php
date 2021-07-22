@@ -1,11 +1,12 @@
 <?php
 global $i18n;
+$lang = get_option( 'los_lang' );
 ?>
 
 <div class="donate-box aspect-ratio" ar-width="16" ar-height="10" ar-min="850">
     <div class="donate-cont">
         <h3><?= $i18n["donate-title"] ?></h3>
-        <p><strong><?= $i18n["donate-text"] ?></strong></p>
+        <p><strong><?= $lang["donatebox"] ?></strong></p>
         <div class="amount-grid">
             <div class="amount-cont aspect-ratio" ar-width="3" ar-height="2.5" ar-min="0" rnw-amount="10">
                 <span class="currency buttonfont bf-1">CHF</span>

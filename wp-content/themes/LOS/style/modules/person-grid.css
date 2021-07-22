@@ -7,6 +7,7 @@
 
 .person-column {
     width: var(--scolwid);
+    margin-bottom: 1rem;
 }
 
 .person-img {
@@ -23,6 +24,7 @@ h3.person-name {
 p.person-position {
     font-weight: 400;
     color: var(--grey);
+    line-height: 1.15;
 }
 
 @media only screen and (max-width: 940px) {

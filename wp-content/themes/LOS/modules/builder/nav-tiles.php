@@ -12,7 +12,7 @@
                 $target = " target='_blank'";
             }
             ?>
-                <a href="<?= $url ?>"<?= $target ?> class="navtile aspect-ratio" ar-width="1" ar-height="1" ar-min="0" style="background-image: linear-gradient(0deg, rgba(190, 22, 34, 0.6), rgba(190, 22, 34, 0.6)), url('<?= the_sub_field("nt_img") ?>')">
+                <a href="<?= $url ?>"<?= $target ?> class="navtile aspect-ratio" ar-width="1" ar-height="1" ar-min="0" style="background-image: url('<?= the_sub_field("nt_img") ?>')">
                     <div class="navtile-text buttonfont bf-2"><?= the_sub_field("nt_title") ?></div>
                 </a>
         <?php

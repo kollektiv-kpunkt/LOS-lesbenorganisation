@@ -17,7 +17,7 @@ if ($contact != "") {
         <p class="lead"><?= the_field("event_excerpt") ?></p>
         <div class="info-box">
             <div class="info-item">
-                <i class="ri-calendar-line"></i><p class="buttonfont"><?= the_field("event_date") ?></p>
+                <i class="ri-calendar-line"></i><p class="buttonfont"><?= date("d.m.Y", strtotime(get_field("event_date"))) ?></p>
             </div>
             <div class="info-item">
                 <i class="ri-map-pin-line"></i><p class="buttonfont"><?= the_field("event_place") ?></p>

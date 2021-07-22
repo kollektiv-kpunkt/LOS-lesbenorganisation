@@ -315,10 +315,10 @@
                         },
                         {
                             "key": "field_60a10b9136356",
-                            "label": "Toggle Layout",
+                            "label": "Layout",
                             "name": "module_toggle_layouts",
                             "type": "flexible_content",
-                            "instructions": "Select the contents you want in your toggle",
+                            "instructions": "Select the contents you want in your Layout",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -617,5 +617,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1621496932
+    "modified": 1626611041
 }

@@ -26,7 +26,7 @@ $lang = get_option( 'los_lang' );
     </div>
     <hr class="footer-hr">
     <div id="donate-cont">
-        <small><?= $i18n["footer_donate"] ?></small>
+        <small><?= $lang["footer_lower"] ?></small>
         <div id="sm-cont">
             <?php
             if (isset($i18n["fb-link"])) { ?>

@@ -7,9 +7,9 @@ $i18n = array(
     "_NOT1-url" => "https://www.organisation-lesbienne.ch/",
     "_NOT2" => "it",
     "matomo-id" => 2,
+    "matomo-status" => "Ihr aktueller Matomo Status",
     
     // Mailchimp
-    "mc_api" => "70d2bc4ed30c074e51561f79eb953d5a-us15",
     "mc_prefix" => "us15",
     "mc_l-news_ID" => "b71f346fe5",
     "thx-nl" => "Danke, dass du unseren Newsletter abonniert hast!",
@@ -55,7 +55,7 @@ $i18n = array(
 
     // ACTIVIST FORM
     "activist-support-type" => "Ich kann euch unterstützen in den Bereichen...",
-    "activist-support-type-webpage" => "Homepage (mir WordPress)",
+    "activist-support-type-webpage" => "Homepage (mit WordPress)",
     "activist-support-type-events" => "Organisieren von Anlässen (z.B. Lesungen oder Partys)",
     "activist-support-type-demos" => "Organisieren von Demo-Teilnahmen (z.B. Pride)",
     "activist-support-type-proofread" => "Korrekturlesen",
@@ -77,7 +77,6 @@ $i18n = array(
     "activist-places-stgallen" => "St. Gallen",
     "activist-information" => "Deine Angaben",
     "activist-submit" => "Jetzt unterstützen",
-    "activist-to-email" => "timothy@kpunkt.ch",
     "activist-thx" => "Du bist super! Danke, dass du uns unterstützen willst. Wir melden uns ganz bald bei dir.",
 
     // DONATE

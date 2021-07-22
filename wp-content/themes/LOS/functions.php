@@ -85,6 +85,20 @@ function curryear_func( $atts ) {
     return $curryear;
 }
 
+add_shortcode( 'losMatomoStatus', 'matomo_status_func' );
+function matomo_status_func( $atts ) {
+    $lang_settings = get_option( 'los_lang' ); 
+    global $i18n;
+    include __DIR__ . "/i18n/{$lang_settings['gen']}.php";
+
+    $chck = "<input type='checkbox' id='matomoStatusChk'><label onclick='handleMatomo(this);' for='matomoStatusChk'><b>{$i18n["matomo-status"]}</b></label>";
+    ob_start();
+
+    echo($chck);
+    echo("<script src='" . get_template_directory_uri() . "/js/matomoStatus.js'></script>");
+    return ob_get_clean();
+}
+
 
 /* LANG SETTINGS */
 function los_customize_register( $wp_customize ){
@@ -153,6 +167,43 @@ function los_customize_register( $wp_customize ){
             'label'      => __('Footer upper text', 'lang_footer_upper'),
             'section'    => 'los_lang_settings',
             'settings'   => 'los_lang[footer_upper]',
+            'type'       => 'textarea'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'los_lang[footer_lower]', 
+        array(
+            'default'        => '<p>Spendenkonto: 85-6671-0, IBAN CH00 0000 0000 0000 0</p>
+            <p>Deine Spende an die LOS kann steuerlich geltend gemacht werden.</p>',
+            'capability'     => 'edit_theme_options',
+            'type'           => 'option',
+            )
+        );
+    $wp_customize->add_control(
+        'lang_footer_lower', 
+        array(
+            'label'      => __('Footer lower text', 'lang_footer_lower'),
+            'section'    => 'los_lang_settings',
+            'settings'   => 'los_lang[footer_lower]',
+            'type'       => 'textarea'
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'los_lang[donatebox]', 
+        array(
+            'default'        => 'Dank deiner Spende kämpfen wir noch effektiver für die Ehe für alle und für die umfassende Rechte von Lesben, Bisexuellen und queeren Frauen.',
+            'capability'     => 'edit_theme_options',
+            'type'           => 'option',
+            )
+        );
+    $wp_customize->add_control(
+        'lang_donatebox', 
+        array(
+            'label'      => __('Donatebox text', 'lang_donatebox'),
+            'section'    => 'los_lang_settings',
+            'settings'   => 'los_lang[donatebox]',
             'type'       => 'textarea'
         )
     );
@@ -252,6 +303,7 @@ function createLosTables() {
             `member_email2` varchar(100) NOT NULL,
             `member_street` varchar(255) NOT NULL,
             `member_plz` varchar(10) NOT NULL,
+            `member_place` varchar(255) NOT NULL,
             `member_amount` varchar(100) NOT NULL,
             `member_lang` varchar(4) NOT NULL,
             `member_phone` varchar(100) NOT NULL,
@@ -382,8 +434,8 @@ function add_acf_json_load_folder( $paths ) {
 }
 
 // (Optional) Hide the ACF admin menu item.
-add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
-function my_acf_settings_show_admin( $show_admin ) {
-    return false;
-}
+// add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
+// function my_acf_settings_show_admin( $show_admin ) {
+//     return false;
+// }
 ?>

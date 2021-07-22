@@ -9,7 +9,6 @@ $i18n = array(
     "matomo-id" => 1,
     
     // Mailchimp
-    "mc_api" => "306ee73aaa74c104b4684cb267175ed7-us15",
     "mc_prefix" => "us15",
     "mc_l-news_ID" => "0d0d92f80a",
     "thx-nl" => "Danke, dass du unseren Newsletter abonniert hast!",
@@ -77,7 +76,6 @@ $i18n = array(
     "activist-places-stgallen" => "St. Gallen",
     "activist-information" => "Deine Angaben",
     "activist-submit" => "Jetzt unterstützen",
-    "activist-to-email" => "timothy@kpunkt.ch",
     "activist-thx" => "Du bist super! Danke, dass du uns unterstützen willst. Wir melden uns ganz bald bei dir.",
 
     // DONATE

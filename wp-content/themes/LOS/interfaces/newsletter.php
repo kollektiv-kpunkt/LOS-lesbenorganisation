@@ -3,13 +3,14 @@ require_once(__DIR__ . "/../../../../wp-load.php");
 $lang_settings = get_option( 'los_lang' ); 
 global $i18n;
 include __DIR__ . "/../i18n/{$lang_settings['gen']}.php";
+include __DIR__ . "/../config/config.php";
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
 $client = new MailchimpMarketing\ApiClient();
 
 $client->setConfig([
-    'apiKey' => $i18n["mc_api"],
+    'apiKey' => $config["mc_api"][$lang_settings['gen']],
     'server' => $i18n["mc_prefix"],
 ]);
 

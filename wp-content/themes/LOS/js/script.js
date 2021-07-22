@@ -51,10 +51,12 @@ jQuery("a").click(function(event){
 /* MOBILE MENU */
 jQuery("#mobile-navmenu").click(function(){
     jQuery("#mobile-menu-cont").addClass("show");
+    jQuery("html").addClass("noscroll");
 })
 
 jQuery("#close-box").click(function(){
     jQuery("#mobile-menu-cont").removeClass("show");
+    jQuery("html").removeClass("noscroll");
 })
 
 /* LANGUAGE PICKERS */
